@@ -72,6 +72,7 @@ def all_holidays_with_bbq(holiday_hash)
       holiday.each {|holiday, supplies|
         if supplies == "BBQ"
           answer << holiday
+        binding.pry
         end
       }
   }
