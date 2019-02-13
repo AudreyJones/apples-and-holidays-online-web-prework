@@ -71,8 +71,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each {|season, holiday|
       holiday.each {|holiday, supplies|
         if supplies == "BBQ"
+          binding.pry
           answer << holiday
-        binding.pry
+        
         end
       }
   }
